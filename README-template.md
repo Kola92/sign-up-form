@@ -157,6 +157,7 @@ function validateForm(e) {
 ### Useful resources
 
 - [JavaScript Form Validation](https://www.tutorialrepublic.com/javascript-tutorial/javascript-form-validation.php) - This helped me learn a great deal about client side form validation. The solution and explanation was so direct and easy to understand.
+- [Box Shadow Generator](https://shadows.brumm.af/) - With  this tool it was easier to tweak and achieve the exact type of box shadow that I wanted.
 
 ## Author
 

@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: hsl(0, 100%, 74%);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  height: 100vh;
+}
+button:hover {
+  cursor: pointer;
+}
+.container {
+  background-image: url("./images/bg-intro-mobile.png");
+  text-align: center;
+  background-position-x: -48px;
+  background-position-y: -4px;
+}
+.inner-container {
+  padding-top: 5rem;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.page-header {
+  margin-bottom: 15px;
+}
+.page-header h1 {
+  font-size: 1.4rem;
+  line-height: 1.3;
+  font-weight: 900;
+}
+.page-copy {
+  margin-bottom: 2.5rem;
+}
+.page-copy p {
+  font-size: 0.86rem;
+  font-weight: 500;
+}
+.cta-btn {
+  margin-bottom: 15px;
+}
+.cta-btn button {
+  width: -webkit-fill-available;
+  border-color: transparent;
+  background-color: hsl(248, 32%, 49%);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  padding-bottom: 11px;
+  padding-top: 11px;
+  border-radius: 7px;
+  box-shadow: 0 0.6px 0px rgba(0, 0, 0, 0.069), 0 1.8px 0px rgba(0, 0, 0, 0.101),
+    0 5px 0px rgba(0, 0, 0, 0.17);
+}
+.cta-btn span {
+  font-weight: 800;
+}
+.error {
+  color: hsl(0, 100%, 74%);
+  font-size: 0.7rem;
+  font-weight: 600;
+  font-style: italic;
+  text-align: right;
+}
+.form-container {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 0.4px 0px rgba(0, 0, 0, 0.069), 0 1.3px 0px rgba(0, 0, 0, 0.101),
+    0 5px 0px rgba(0, 0, 0, 0.17);
+}
+.form-container input {
+  width: -webkit-fill-available;
+  color: hsl(249, 10%, 26%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+}
+.form-container input:focus,
+.form-container input:focus-visible {
+  border: 1px solid hsl(249, 10%, 26%) !important;
+  outline: hsl(249, 10%, 26%) auto 0px !important;
+}
+form {
+  margin-bottom: 7px;
+}
+.input-field {
+  margin-bottom: 10px;
+}
+.error-state {
+  border-color: hsl(0, 100%, 74%) !important;
+  color: hsl(0, 100%, 74%) !important;
+  background-image: url("./images/icon-error.svg") !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important;
+  background-size: 24px !important;
+  background-position: 98% 50% !important;
+}
+.submit-btn button {
+  width: -webkit-fill-available;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 600;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  background-color: hsl(154, 59%, 51%);
+  border-radius: 5px;
+  border-color: transparent;
+  text-transform: uppercase;
+  box-shadow: 0 0.2px 0px rgba(0, 0, 0, 0.158), 0 0.5px 0px rgba(0, 0, 0, 0.232),
+    0 2px 0px rgba(0, 0, 0, 0.39);
+}
+.terms {
+  color: hsl(246, 25%, 77%);
+  line-height: 1.2;
+  font-size: 0.85rem;
+}
+.terms span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media queries */
+@media screen and (min-width: 700px) {
+  .page-header h1 {
+    font-size: 2.3rem;
+  }
+  .page-copy p {
+    font-size: 0.94rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    background-image: url("./images/bg-intro-desktop.png");
+  }
+  .inner-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 6.5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    grid-column-gap: 3rem;
+    padding-bottom: 5rem;
+  }
+  .left-card {
+    text-align: left;
+    padding-top: 8rem;
+  }
+  .form-container {
+    padding: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  .form-container input {
+    padding-left: 30px;
+  }
+}
